@@ -1,0 +1,52 @@
+{
+  "name": "codeworks-pre-course",
+  "version": "3.0.8",
+  "description": "The Codeworks Full Stack Pre Course Curriculum",
+  "scripts": {
+    "precommit": "gulp lint",
+    "test": "mocha underline/test && mocha stringifier/test && mocha instatags/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "codeworks/pre-course"
+  },
+  "author": "Codeworks",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "chai": "^4.2.0",
+    "cz-changelog": "^1.0.1",
+    "del": "^4.1.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-json": "^1.4.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^5.0.0",
+    "gulp-htmllint": "0.0.16",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-stylelint": "^9.0.0",
+    "gulp-util": "3.0.8",
+    "husky": "^2.3.0",
+    "jsdom": "^16.2.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^6.1.4",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "skeleton-css": "^2.0.4",
+    "underscore": "^1.10.2"
+  }
+}

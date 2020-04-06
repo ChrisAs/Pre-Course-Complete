@@ -1,0 +1,63 @@
+#user {
+  height: 200px;
+  padding: 20px 50px;
+}
+
+#user .avatar {
+  border-radius: 50%;
+}
+
+#user .user-info h1::before {
+  content: '@';
+}
+
+.user-info ul {
+  list-style-type: none;
+}
+
+.user-info ul li {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.user-info li span {
+  display: block;
+  color: #afafaf;
+  font-weight: bold;
+}
+
+/* TAG LIST */
+.tag-list {
+  min-height: 43px;
+  border-top: 1px solid #afafaf;
+  border-bottom: 1px solid #afafaf;
+}
+
+.tag-list ul {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.tag-list ul li {
+  margin-right: 20px;
+}
+
+.tag-list a {
+  cursor: pointer;
+}
+
+/* USER MEDIA */
+.user-media {
+  padding: 20px 0;
+}
+
+.user-media-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 230px;
+  height: 230px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

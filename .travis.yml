@@ -1,0 +1,7 @@
+language: node_js
+node_js: "node"
+cache:
+  directories:
+    - node_modules
+notifications: 
+  webhooks: https://us-central1-cw-instructor-tools.cloudfunctions.net/widgets/api/webhook/travis
